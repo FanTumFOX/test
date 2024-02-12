@@ -39,6 +39,7 @@ window.addEventListener('click', function (event) {
             // console.log(event.target.innerHTML, event.target.closest('.feed').dataset.postId);
             const postId = event.target.closest('.feed').dataset.postId;
             deletePost(postId);
+            this.location.reload();
         }
 
         if (event.target.innerHTML.match('Скрыть')) {
