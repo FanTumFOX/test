@@ -4,10 +4,28 @@ const buttonSidebar = document.querySelector(".sidebar");
 getContent();
 renderButtonSidebar();
 
+// async function getContent() {
+//     const response = await fetch("../../js/content.json");
+//     const contentArray = await response.json();
+//     renderSidebar(contentArray);
+// }
+
 async function getContent() {
-    const response = await fetch("../../js/content.json");
-    const contentArray = await response.json();
-    renderSidebar(contentArray);
+    try {
+        const response = await fetch(`http://localhost:5500/getContent`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+
+        const contentArray = await response.json();
+
+        renderSidebar(contentArray);
+
+    } catch (error) {
+        console.error("Произошла ошибка при запросе:", error);
+    }
 }
 
 function renderSidebar(contentArray) {

@@ -26,6 +26,19 @@ app.listen(port, () => {
 });
 
 
+app.post('/getContent', async (req, res) => {
+    try {
+        const data = await fs.readFile("./content.json", "utf-8");
+        content = JSON.parse(data);
+        res.json(content);
+
+    } catch (error) {
+        console.error('Ошибка при обновлении данных:', error);
+        res.status(500).json({ error: 'Ошибка сервера' });
+    }
+});
+
+
 app.post('/updateLikesDislikes/:postId/:action', async (req, res) => {
     const { postId, action } = req.params;
     try {
