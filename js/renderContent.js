@@ -3,7 +3,7 @@ const contentFeed = document.querySelector("main");
 getContent();
 
 async function getContent() {
-    const response = await fetch("/js/content.json");
+    const response = await fetch("../../js/content.json");
     const contentArray = await response.json();
     renderContent(contentArray);
 }
@@ -41,7 +41,7 @@ function renderContent(contentArray) {
                 <div class="popup">
                     <div class="popup_menu">
                         <div class="popup_menu_option">
-                            <div class="popup_menu_option_label" onclick="location.href='../editor.html';">Редактировать</div>
+                            <div class="popup_menu_option_label" onclick="location.href='../main/editor.html';">Редактировать</div>
                         </div>
                         <div class="popup_menu_option">
                             <div class="popup_menu_option_label">Скрыть</div>

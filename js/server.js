@@ -29,7 +29,7 @@ app.listen(port, () => {
 app.post('/updateLikesDislikes/:postId/:action', async (req, res) => {
     const { postId, action } = req.params;
     try {
-        const data = await fs.readFile("content.json", "utf-8");
+        const data = await fs.readFile("./content.json", "utf-8");
         const content = JSON.parse(data);
 
         const contentToUpdate = content.find(content => content.id == postId);
@@ -40,7 +40,7 @@ app.post('/updateLikesDislikes/:postId/:action', async (req, res) => {
             contentToUpdate.downvotes += 1;
         }
 
-        await fs.writeFile("content.json", JSON.stringify(content, null, 2), "utf-8");
+        await fs.writeFile("./content.json", JSON.stringify(content, null, 2), "utf-8");
 
         res.json({ upvotes: contentToUpdate.upvotes, downvotes: contentToUpdate.downvotes });
 
@@ -54,7 +54,7 @@ app.post('/updateLikesDislikes/:postId/:action', async (req, res) => {
 app.post('/addNewPost', async (req, res) => {
     const { postInfo } = req.params;
     try {
-        const data = await fs.readFile('content.json', 'utf-8');
+        const data = await fs.readFile('./content.json', 'utf-8');
         const content = JSON.parse(data);
         const postId = content.length > 0 ? Math.max(...content.map(post => post.id)) + 1 : 1;
 
@@ -77,7 +77,7 @@ app.post('/addNewPost', async (req, res) => {
 
         content.push(newPost);
 
-        await fs.writeFile('content.json', JSON.stringify(content, null, 2), 'utf-8');
+        await fs.writeFile('./content.json', JSON.stringify(content, null, 2), 'utf-8');
         res.status(200).json({ success: true, message: 'Пост успешно добавлен' });
 
     } catch (error) {
@@ -90,7 +90,7 @@ app.post('/addNewPost', async (req, res) => {
 app.post('/editPost', async (req, res) => {
     const { postInfo } = req.params;
     try {
-        const data = await fs.readFile('content.json', 'utf-8');
+        const data = await fs.readFile('./content.json', 'utf-8');
         const content = JSON.parse(data);
 
         const postId = req.body.postId;
@@ -100,7 +100,7 @@ app.post('/editPost', async (req, res) => {
         contentToEdit.text = req.body.text;
         contentToEdit.imgSrc = req.body.imgSrc;
 
-        await fs.writeFile('content.json', JSON.stringify(content, null, 2), 'utf-8');
+        await fs.writeFile('./content.json', JSON.stringify(content, null, 2), 'utf-8');
         res.json({ title: contentToEdit.title, text: contentToEdit.text, imgSrc: contentToEdit.imgSrc });
 
         // res.status(200).json({ success: true, message: 'Пост успешно изменен' });
@@ -115,7 +115,7 @@ app.post('/editPost', async (req, res) => {
 app.delete('/deletePost/:postId', async (req, res) => {
     const { postId } = req.params;
     try {
-        const data = await fs.readFile("content.json", "utf-8");
+        const data = await fs.readFile("./content.json", "utf-8");
         const content = JSON.parse(data);
 
         const contentToDelete = content.findIndex(content => content.id == postId);
@@ -125,7 +125,7 @@ app.delete('/deletePost/:postId', async (req, res) => {
             content.splice(contentToDelete, 1);
 
             // Записываем обновленные данные в файл JSON
-            await fs.writeFile('content.json', JSON.stringify(content, null, 2), 'utf-8');
+            await fs.writeFile('./content.json', JSON.stringify(content, null, 2), 'utf-8');
 
             // Отправляем успешный ответ
             res.status(200).json({ success: true, message: 'Пост успешно удален' });
@@ -143,7 +143,7 @@ app.delete('/deletePost/:postId', async (req, res) => {
 app.post('/changeVisibility/:postId', async (req, res) => {
     const { postId } = req.params;
     try {
-        const data = await fs.readFile("content.json", "utf-8");
+        const data = await fs.readFile("./content.json", "utf-8");
         const content = JSON.parse(data);
 
         const contentToUpdate = content.find(content => content.id == postId);
@@ -154,7 +154,7 @@ app.post('/changeVisibility/:postId', async (req, res) => {
             contentToUpdate.visibility = true;
         }
 
-        await fs.writeFile("content.json", JSON.stringify(content, null, 2), "utf-8");
+        await fs.writeFile("./content.json", JSON.stringify(content, null, 2), "utf-8");
 
         res.json({ visibility: contentToUpdate.visibility });
 

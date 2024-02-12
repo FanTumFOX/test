@@ -90,7 +90,7 @@ window.addEventListener('load', function (event) {
         getContent();
 
         async function getContent() {
-            const response = await fetch("../js/content.json");
+            const response = await fetch("../../js/content.json");
             const contentArray = await response.json();
 
             const contentToUpdate = contentArray.find(contentArray => contentArray.id == postId);
