@@ -98,13 +98,23 @@ window.addEventListener('load', function (event) {
         getContent();
 
         async function getContent() {
-            const response = await fetch("../../js/content.json");
-            const contentArray = await response.json();
+            try {
+                const response = await fetch(`http://localhost:5500/getContent`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                })
 
-            const contentToUpdate = contentArray.find(contentArray => contentArray.id == postId);
-            document.querySelector('#title').value = contentToUpdate.title;
-            document.querySelector('#img').value = contentToUpdate.imgSrc;
-            document.querySelector('#text').value = contentToUpdate.text;
+                const contentArray = await response.json();
+                const contentToUpdate = contentArray.find(contentArray => contentArray.id == postId);
+                document.querySelector('#title').value = contentToUpdate.title;
+                document.querySelector('#img').value = contentToUpdate.imgSrc;
+                document.querySelector('#text').value = contentToUpdate.text;
+
+            } catch (error) {
+                console.error("Произошла ошибка при запросе:", error);
+            }
         }
     }
 })
