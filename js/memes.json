@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "location": "index",
+        "alt": "rage cat",
+        "src": "https://cdn.7tv.app/emote/6218ad877cc2d4e1953802e9/1x.webp"
+    },
+    {
+        "id": 2,
+        "location": "list",
+        "alt": "pipipiu",
+        "src": "https://cdn.7tv.app/emote/651707f0f649cca3229352df/1x.webp"
+    },
+    {
+        "id": 3,
+        "location": "analytics",
+        "alt": "chipi",
+        "src": "https://cdn.7tv.app/emote/6574d4c8b142f5cb8f21577e/1x.webp"
+    }
+]

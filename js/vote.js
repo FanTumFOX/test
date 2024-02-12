@@ -1,0 +1,44 @@
+window.addEventListener('click', function (event) {
+    // Проверка id поста и вида действия
+
+    // Если повышение рейтинга
+    if (event.target.className.animVal == "chevron-up") {
+        const action = event.target.className.animVal;
+        // console.log(action);
+        const postId = event.target.closest('.feed').dataset.postId;
+        // console.log(postId);
+        vote(postId, action);
+    }
+
+    // Если понижение рейтинга
+    if (event.target.className.animVal == "chevron-down") {
+        const action = event.target.className.animVal;
+        // console.log(action);
+        const postId = event.target.closest('.feed').dataset.postId;
+        // console.log(postId);
+        vote(postId, action);
+    }
+})
+
+
+// Ассинхронная функция/запрос
+
+async function vote(postId, action) {
+    try {
+        const response = await fetch(`http://localhost:5500/updateLikesDislikes/${postId}/${action}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log("Успешный ответ от сервера:", data);
+    } catch (error) {
+        console.error("Произошла ошибка при запросе:", error);
+    }
+}

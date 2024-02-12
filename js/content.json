@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "location": "list",
+    "visibility": true,
+    "title": "Крупнейшие предприятия по стране",
+    "text": "Списки крупнейших предприятий в сфере птицеводства по стране",
+    "postSrc": "list1.html",
+    "imgSrc": "https://storage.googleapis.com/pai-images/a65999f482ee48ee9b101260589bd90d.jpeg",
+    "upvotes": 53,
+    "downvotes": 11
+  },
+  {
+    "id": 2,
+    "location": "list",
+    "visibility": true,
+    "title": "Крупнейшие предприятия по региону",
+    "text": "Списки крупнейших предприятий в сфере птицеводства по региону",
+    "postSrc": "list2.html",
+    "imgSrc": "https://wallpapers.com/images/hd/farm-pictures-gmj2xn0zk88p4lkn.jpg",
+    "upvotes": 18,
+    "downvotes": 12
+  },
+  {
+    "id": 3,
+    "location": "list",
+    "visibility": true,
+    "title": "New block 1",
+    "text": "For example 1 For example 1 For example 1 For example 1 For example 1 For example 1",
+    "postSrc": "",
+    "imgSrc": "https://leonardo.osnova.io/62cc3831-2296-5ac3-8007-944ac9c0ef3d/-/preview/1200x/",
+    "upvotes": 6,
+    "downvotes": 5
+  },
+  {
+    "id": 4,
+    "location": "list",
+    "visibility": true,
+    "title": "New block 2",
+    "text": "For example 2 For example 2 For example 2 For example 2 For example 2 For example 2",
+    "postSrc": "",
+    "imgSrc": "https://leonardo.osnova.io/08a2245c-cd70-522e-83ca-debb25056569/-/preview/800x/",
+    "upvotes": 9,
+    "downvotes": 4
+  },
+  {
+    "id": 5,
+    "location": "list",
+    "visibility": true,
+    "title": "New block 3",
+    "text": "For example 3 For example 3 For example 3 For example 3 For example 3 For example 3",
+    "postSrc": "",
+    "imgSrc": "https://leonardo.osnova.io/a7d30411-f4df-5adb-8287-88ffb8a41e5c/-/preview/800x/",
+    "upvotes": 10,
+    "downvotes": 0
+  },
+  {
+    "id": 6,
+    "location": "analytics",
+    "visibility": true,
+    "title": "Группа агропредприятий «Ресурс»",
+    "text": "For example 3 For example 3 For example 3 For example 3 For example 3 For example 3",
+    "postSrc": "analytics1.html",
+    "imgSrc": "",
+    "upvotes": 61,
+    "downvotes": 46
+  },
+  {
+    "id": 7,
+    "location": "analytics",
+    "visibility": true,
+    "title": "АО «ЕнисейАгроСоюз»",
+    "text": "For example 3 For example 3 For example 3 For example 3 For example 3 For example 3",
+    "postSrc": "analytics2.html",
+    "imgSrc": "",
+    "upvotes": 23,
+    "downvotes": 10
+  },
+  {
+    "id": 8,
+    "location": "analytics",
+    "visibility": true,
+    "title": "АО «Приосколье»",
+    "text": "For example 3 For example 3 For example 3 For example 3 For example 3 For example 3",
+    "postSrc": "analytics3.html",
+    "imgSrc": "",
+    "upvotes": 4,
+    "downvotes": 0
+  },
+  {
+    "id": 9,
+    "location": "analytics",
+    "visibility": true,
+    "title": "Джон Уик, а нет, стоп, Алан Вейк",
+    "text": "For example 3 For example 3 For example 3 For example 3 For example 3 For example 3",
+    "postSrc": "analytics3.html",
+    "imgSrc": "https://leonardo.osnova.io/6d44c697-21f0-5e27-ae3d-d332be678837/-/preview/800x/",
+    "upvotes": 105,
+    "downvotes": 42
+  },
+  {
+    "id": 10,
+    "location": "list",
+    "visibility": true,
+    "title": "Новый пост",
+    "text": "Запрещенные символы в имени",
+    "postSrc": "",
+    "imgSrc": "https://leonardo.osnova.io/85589f48-afb8-56a9-b17e-41ef6d4d91dd/-/preview/800x/",
+    "upvotes": 15,
+    "downvotes": 2
+  },
+  {
+    "id": 11,
+    "location": "list",
+    "visibility": true,
+    "title": "Helldivers 2 стала первой игрой Sony, преодолевшей отметку в 100 тысяч одновременных игроков в Steam ",
+    "text": "В ночь с 9 на 10 февраля кооперативный шутер Helldivers достиг почти 120 тысяч одновременных игроков в Steam. Игра также доступна на PS5.",
+    "postSrc": "",
+    "imgSrc": "https://leonardo.osnova.io/a502118c-3fd6-5e66-ad3f-8d22f8da5de0/-/preview/800x/",
+    "upvotes": 23,
+    "downvotes": 0
+  },
+  {
+    "id": 12,
+    "location": "list",
+    "visibility": true,
+    "title": "ultrakill",
+    "text": "Ультракилл еще никогда не был настолько плавным",
+    "postSrc": "",
+    "imgSrc": "https://leonardo.osnova.io/15c83ffa-44d7-5321-9096-9448f2ba3ffa/-/preview/1000x/",
+    "upvotes": 23,
+    "downvotes": 3
+  }
+]
