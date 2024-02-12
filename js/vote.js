@@ -8,6 +8,9 @@ window.addEventListener('click', function (event) {
         const postId = event.target.closest('.feed').dataset.postId;
         // console.log(postId);
         vote(postId, action);
+        let rate = event.target.closest('.feed').querySelector('.rate_score');
+        rate.innerHTML++;
+        checkColor(rate);
     }
 
     // Если понижение рейтинга
@@ -17,8 +20,21 @@ window.addEventListener('click', function (event) {
         const postId = event.target.closest('.feed').dataset.postId;
         // console.log(postId);
         vote(postId, action);
+        let rate = event.target.closest('.feed').querySelector('.rate_score');
+        rate.innerHTML--;
+        checkColor(rate);
     }
 })
+
+function checkColor(rate) {
+    if (rate.innerHTML >= 0 && rate.className.match('.negative') && !rate.className.match('.positive')) {
+        rate.classList.remove('.negative');
+        rate.classList.toggle('.positive');
+    } else if (rate.innerHTML < 0 && !rate.className.match('.negative') && rate.className.match('.positive')) {
+        rate.classList.remove('.positive');
+        rate.classList.toggle('.negative');
+    }
+}
 
 
 // Ассинхронная функция/запрос

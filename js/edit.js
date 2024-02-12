@@ -45,6 +45,7 @@ window.addEventListener('click', function (event) {
             console.log(event.target.innerHTML, event.target.closest('.feed').dataset.postId);
             const postId = event.target.closest('.feed').dataset.postId;
             changeVisibility(postId);
+            this.location.reload();
         }
 
         if (event.target.innerHTML.match('Редактировать')) {
@@ -61,6 +62,7 @@ window.addEventListener('click', function (event) {
     if (event.target.className == "changeVisibility") {
         const postId = event.target.closest('.feed').dataset.postId;
         changeVisibility(postId);
+        this.location.reload();
     }
 
     if (event.target.className === "new_post edit") {
@@ -74,6 +76,9 @@ window.addEventListener('click', function (event) {
                 };
                 console.log(postInfo);
                 editPost(postInfo);
+                this.document.querySelector('#title').value = '';
+                this.document.querySelector('#img').value = '';
+                this.document.querySelector('#text').value = '';
             } else {
                 this.alert('Введите название публикации и текст');
             }
