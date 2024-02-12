@@ -23,6 +23,9 @@ window.addEventListener('click', function (event) {
                 };
                 console.log(postInfo);
                 newPost(postInfo);
+                this.document.querySelector('#title').value = '';
+                this.document.querySelector('#img').value = '';
+                this.document.querySelector('#text').value = '';
             } else {
                 this.alert('Введите название публикации и текст')
             }
