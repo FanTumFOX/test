@@ -27,12 +27,12 @@ window.addEventListener('click', function (event) {
 })
 
 function checkColor(rate) {
-    if (rate.innerHTML >= 0 && rate.className.match('.negative') && !rate.className.match('.positive')) {
-        rate.classList.remove('.negative');
-        rate.classList.toggle('.positive');
-    } else if (rate.innerHTML < 0 && !rate.className.match('.negative') && rate.className.match('.positive')) {
-        rate.classList.remove('.positive');
-        rate.classList.toggle('.negative');
+    if (rate.innerHTML >= 0 && rate.className.match('negative') && !rate.className.match('positive')) {
+        rate.classList.remove('negative');
+        rate.classList.toggle('positive');
+    } else if (rate.innerHTML < 0 && !rate.className.match('negative') && rate.className.match('positive')) {
+        rate.classList.remove('positive');
+        rate.classList.toggle('negative');
     }
 }
 
