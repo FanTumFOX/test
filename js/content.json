@@ -7,8 +7,8 @@
     "text": "Списки крупнейших предприятий в сфере птицеводства по стране",
     "postSrc": "list1.html",
     "imgSrc": "https://storage.googleapis.com/pai-images/a65999f482ee48ee9b101260589bd90d.jpeg",
-    "upvotes": 57,
-    "downvotes": 11
+    "upvotes": 72,
+    "downvotes": 35
   },
   {
     "id": 2,
@@ -18,19 +18,8 @@
     "text": "Списки крупнейших предприятий в сфере птицеводства по региону",
     "postSrc": "list2.html",
     "imgSrc": "https://wallpapers.com/images/hd/farm-pictures-gmj2xn0zk88p4lkn.jpg",
-    "upvotes": 18,
-    "downvotes": 12
-  },
-  {
-    "id": 3,
-    "location": "list",
-    "visibility": true,
-    "title": "New block 1",
-    "text": "For example 1 For example 1 For example 1 For example 1 For example 1 For example 1",
-    "postSrc": "",
-    "imgSrc": "https://leonardo.osnova.io/62cc3831-2296-5ac3-8007-944ac9c0ef3d/-/preview/1200x/",
-    "upvotes": 6,
-    "downvotes": 5
+    "upvotes": 29,
+    "downvotes": 27
   },
   {
     "id": 4,
@@ -44,64 +33,64 @@
     "downvotes": 4
   },
   {
-    "id": 5,
-    "location": "list",
-    "visibility": true,
-    "title": "New block 3",
-    "text": "For example 3 For example 3 For example 3 For example 3 For example 3 For example 3",
-    "postSrc": "",
-    "imgSrc": "https://leonardo.osnova.io/a7d30411-f4df-5adb-8287-88ffb8a41e5c/-/preview/800x/",
-    "upvotes": 10,
-    "downvotes": 0
-  },
-  {
     "id": 6,
     "location": "analytics",
     "visibility": true,
-    "title": "Группа агропредприятий «Ресурс»",
-    "text": "For example 3 For example 3 For example 3 For example 3 For example 3 For example 3",
-    "postSrc": "analytics1.html",
-    "imgSrc": "",
-    "upvotes": 61,
-    "downvotes": 46
+    "title": "Аналитика отрасли сельского хозяйства: Птицеводство",
+    "text": "Сельское хозяйство России — крупная отрасль российской экономики. Доля сельского хозяйства (агропромышленого комплекса, АПК) в валовой добавленной стоимости в России — около 4,5 %",
+    "postSrc": "analytics4.html",
+    "imgSrc": "https://leonardo.osnova.io/a7d30411-f4df-5adb-8287-88ffb8a41e5c/-/preview/800x/",
+    "upvotes": 2,
+    "downvotes": 2
   },
   {
     "id": 7,
     "location": "analytics",
     "visibility": true,
-    "title": "АО «ЕнисейАгроСоюз»",
-    "text": "For example 3 For example 3 For example 3 For example 3 For example 3 For example 3",
-    "postSrc": "analytics2.html",
-    "imgSrc": "",
-    "upvotes": 23,
-    "downvotes": 10
+    "title": "Группа агропредприятий «Ресурс»",
+    "text": "Производственные активы ГАП «Ресурс» расположены в экологически чистых регионах России с благоприятным климатом. Применяются современные технологии.",
+    "postSrc": "analytics1.html",
+    "imgSrc": "https://lh3.google.com/u/0/d/169-GIHQFYKcBRqYZrOmv-8lRw1hOspsg=w1509-h941-iv1",
+    "upvotes": 88,
+    "downvotes": 56
   },
   {
     "id": 8,
     "location": "analytics",
     "visibility": true,
+    "title": "АО «ЕнисейАгроСоюз»",
+    "text": "«Енисейский бройлер» (АО «ЕнисейАгроСоюз») — крупнейшая бройлерная птицефабрика в Красноярском крае. Производит продукцию из мяса птицы под торговой маркой «Енисейский бройлер».",
+    "postSrc": "analytics2.html",
+    "imgSrc": "https://lh3.google.com/u/0/d/1W9Nm6dNm4GyCXRAjA9Nj5uAewyCQ4jOl=w1509-h941-iv1",
+    "upvotes": 23,
+    "downvotes": 10
+  },
+  {
+    "id": 9,
+    "location": "analytics",
+    "visibility": true,
     "title": "АО «Приосколье»",
-    "text": "For example 3 For example 3 For example 3 For example 3 For example 3 For example 3",
+    "text": "Сайт АО «Приосколье»",
     "postSrc": "analytics3.html",
-    "imgSrc": "",
+    "imgSrc": "https://lh3.google.com/u/0/d/1Ps-CQ0c1vnuhg7y2R8lLuOlexjYQ6Jx0=w1509-h941-iv1",
     "upvotes": 4,
     "downvotes": 0
   },
   {
-    "id": 9,
+    "id": 10,
     "location": "analytics",
     "visibility": true,
     "title": "Джон Уик, а нет, стоп, Алан Вейк",
     "text": "For example 3 For example 3 For example 3 For example 3 For example 3 For example 3",
     "postSrc": "analytics3.html",
     "imgSrc": "https://leonardo.osnova.io/6d44c697-21f0-5e27-ae3d-d332be678837/-/preview/800x/",
-    "upvotes": 105,
-    "downvotes": 42
+    "upvotes": 137,
+    "downvotes": 67
   },
   {
-    "id": 10,
+    "id": 11,
     "location": "list",
-    "visibility": true,
+    "visibility": false,
     "title": "Новый пост",
     "text": "Запрещенные символы в имени",
     "postSrc": "",
@@ -110,7 +99,7 @@
     "downvotes": 2
   },
   {
-    "id": 11,
+    "id": 12,
     "location": "list",
     "visibility": true,
     "title": "Helldivers 2 стала первой игрой Sony, преодолевшей отметку в 100 тысяч одновременных игроков в Steam ",
@@ -121,14 +110,25 @@
     "downvotes": 0
   },
   {
-    "id": 12,
+    "id": 13,
     "location": "list",
     "visibility": true,
     "title": "ultrakill",
     "text": "Ультракилл еще никогда не был настолько плавным",
     "postSrc": "",
     "imgSrc": "https://leonardo.osnova.io/15c83ffa-44d7-5321-9096-9448f2ba3ffa/-/preview/1000x/",
-    "upvotes": 23,
+    "upvotes": 14,
     "downvotes": 3
+  },
+  {
+    "id": 14,
+    "location": "list",
+    "visibility": true,
+    "title": "В превью-билде Windows 11 нашли упоминания Super Resolution — аналога DLSS от Microsoft ",
+    "text": "Технологию можно будет использовать не только в играх.",
+    "postSrc": "",
+    "imgSrc": "https://leonardo.osnova.io/42d30c13-471a-59a3-8101-c6b4839cf01f/-/preview/1000x/",
+    "upvotes": 30,
+    "downvotes": 16
   }
 ]

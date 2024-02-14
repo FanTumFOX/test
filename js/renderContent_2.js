@@ -2,10 +2,28 @@ const contentFeed = document.querySelector("main");
 
 getContent();
 
+// async function getContent() {
+//     const response = await fetch("../../js/content.json");
+//     const contentArray = await response.json();
+//     renderContent(contentArray);
+// }
+
 async function getContent() {
-    const response = await fetch("../../js/content.json");
-    const contentArray = await response.json();
-    renderContent(contentArray);
+    try {
+        const response = await fetch(`http://localhost:5500/getContent`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+
+        const contentArray = await response.json();
+
+        renderContent(contentArray);
+
+    } catch (error) {
+        console.error("Произошла ошибка при запросе:", error);
+    }
 }
 
 function renderContent(contentArray) {

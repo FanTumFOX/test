@@ -25,7 +25,6 @@ app.listen(port, () => {
     console.log(`Сервер запущен на порту ${port}`);
 });
 
-
 app.post('/getContent', async (req, res) => {
     try {
         const data = await fs.readFile("./content.json", "utf-8");

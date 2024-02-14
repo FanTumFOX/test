@@ -18,8 +18,8 @@ li a {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #b5dff1;
+    color: #000;
     text-align: center;
     padding: 1em;
 }
@@ -28,7 +28,7 @@ nav {
     z-index: 2;
     position: sticky;
     top: 0;
-    background-color: #666;
+    background-color: #D9F0FF;
     color: white;
     padding: 5px;
 }
@@ -57,11 +57,13 @@ nav a {
     height: 100%;
     align-items: center;
     text-decoration: none;
-    color: white;
+    font-weight: 600;
+    color: #000;
 }
 
 nav a:hover {
-    text-shadow: 1px 0 5px;
+    color: #525b61;
+    /* text-shadow: 0px 0 3px #fff; */
 }
 
 .sidebar {
@@ -102,7 +104,8 @@ nav a:hover {
     margin-left: 50px;
 }
 
-.feed_edit {
+.feed_edit,
+.new_post {
     display: inline-flex;
     overflow: visible;
     width: 100%;
@@ -114,7 +117,7 @@ nav a:hover {
     cursor: pointer;
     white-space: nowrap;
     background: none;
-    background-color: #6e6e6e;
+    background-color: #0b5dd7;
     border: none;
     border-radius: 10px;
     font-size: 17px;
@@ -127,7 +130,7 @@ nav a:hover {
 
 .feed_edit:hover,
 .new_post:hover {
-    background-color: #5c5c5c;
+    background-color: #0c4baa;
 }
 
 .post_bar {
@@ -139,25 +142,7 @@ nav a:hover {
 }
 
 .new_post {
-    display: inline-flex;
-    overflow: visible;
     width: 170px;
-    align-items: center;
-    font-family: inherit;
-    line-height: 1;
-    font-weight: 500;
-    justify-content: center;
-    cursor: pointer;
-    white-space: nowrap;
-    background: none;
-    background-color: #6e6e6e;
-    border: none;
-    border-radius: 10px;
-    font-size: 17px;
-    text-transform: none;
-    color: white;
-    padding: 0 16px;
-    height: 46px;
     margin: 32px 0 0 48px;
 }
 
@@ -281,7 +266,8 @@ a.content_link:before {
     padding: 24px;
 }
 
-.feed img {
+.feed img,
+.description img {
     display: block;
     border-radius: 12px;
     width: 100%;
@@ -319,13 +305,13 @@ a.content_link:before {
 }
 
 .chevron-up:hover {
-    color: #1ac400;
+    color: #30B03D;
     background-color: #d8ffd2;
     border-radius: 100px;
 }
 
 .chevron-down:hover {
-    color: #c40000;
+    color: #F0303D;
     background-color: #ffd2d2;
     border-radius: 100px;
 }
@@ -379,6 +365,10 @@ a.content_link:before {
     line-height: 22px;
 }
 
+.table_block {
+    margin: 1em;
+}
+
 table,
 th,
 td {
@@ -390,8 +380,8 @@ td {
 
 footer {
     clear: both;
-    background-color: #333;
-    color: white;
+    background-color: #252525;
+    color: #fff;
     text-align: center;
     position: relative;
     left: 0;
