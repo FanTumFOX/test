@@ -31,7 +31,7 @@ async function getContent() {
 function renderSidebar(contentArray) {
     contentArray.forEach(function (content) {
         shorterTitle = content.title.split(' ').slice(0, 4).join(' ');
-        if (location.pathname.match(`${content.location}`) && content.location == `${content.location}`) {
+        if (location.pathname.match(`${content.location}`) && content.location == `${content.location}` && content.visibility == true) {
             const contentHTML = `<li><a href="${content.postSrc}">${shorterTitle}</a></li>`
             contentSidebar.insertAdjacentHTML("beforeend", contentHTML);
         }
