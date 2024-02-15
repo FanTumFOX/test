@@ -83,6 +83,7 @@ app.post('/addNewPost', async (req, res) => {
             text: text,
             postSrc: "",
             imgSrc: imgSrc,
+            view_count: 0,
             upvotes: 0,
             downvotes: 0
         };
@@ -172,6 +173,28 @@ app.post('/changeVisibility/:postId', async (req, res) => {
 
     } catch (error) {
         console.error('Ошибка при попытке скрыть пост:', error);
+        res.status(500).json({ error: 'Ошибка сервера' });
+    }
+});
+
+app.post('/viewCounter', async (req, res) => {
+    // const { pathname } = req.params;
+    try {
+        const data = await fs.readFile("./content.json", "utf-8");
+        const content = JSON.parse(data);
+
+        const pathname = req.body.postSrc;
+        const postId = req.body.postId;
+
+        const contentToUpdate = content.find(content => content.id == postId);
+        contentToUpdate.view_count += 1;
+
+        await fs.writeFile("./content.json", JSON.stringify(content, null, 2), "utf-8");
+
+        res.json({ view_count: contentToUpdate.view_count });
+
+    } catch (error) {
+        console.error('Ошибка при попытке обновить число просмотров:', error);
         res.status(500).json({ error: 'Ошибка сервера' });
     }
 });

@@ -324,6 +324,20 @@ a.content_link:before {
     margin: 0;
 }
 
+.space {
+    flex: 1;
+}
+
+.eye {
+    margin-right: 5px;
+}
+
+.view_counter,
+.eye {
+    display: block;
+    color: #595959;
+}
+
 .popup {
     display: none;
     /* position: relative; */
